@@ -42,9 +42,10 @@ int sudoku(char **field)
 	while (i < 10)
 	{
 		set_cell(field, cords, i);
-		if (is_valid(field) && sudoku(field)) //TODO is_valid_local(), print field(only complete one)
+		if (is_valid(field) && sudoku(field)) //TODO is_valid_local(), print field(only complete one)(solved, just print in main() after sudoku())
 				return (1);
 		i++;
 	}
+	set_cell(field, cords, 0);//clear cell!
 	return (0);
 }
