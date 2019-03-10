@@ -32,7 +32,7 @@ void set_cell(char **field, char *cords, char num)
 
 int sudoku(char **field)
 {
-	char cords[];
+	char *cords;
 	int i;
 
 	cords = search_empty(field);
