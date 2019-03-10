@@ -41,7 +41,7 @@ int sudoku(char **field)
 	i = 1;
 	while (i < 10)
 	{
-		set_cell(cords, i);
+		set_cell(field, cords, i);
 		if (is_valid(field) && sudoku(field)) //TODO is_valid_local(), print field(only complete one)
 				return (1);
 		i++;
